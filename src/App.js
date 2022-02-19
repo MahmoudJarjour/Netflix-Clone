@@ -1,10 +1,15 @@
 import Row from './Row';
 import requests from './requests';
+import Banner from './Banner';
 function App() {
 	return (
 		<div className="App">
-			<p style={{ fontSize: '20px', fontWeight: 'bold' }}>Netflix Clone</p>
-			<Row title="NETFLIX ORIGINAL" fetchUrl={requests.fetchNetflixOriginals} />
+			{/* Nav */}
+
+			{/* banner */}
+			<Banner />
+
+			<Row title="NETFLIX ORIGINAL" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
 			<Row title="Trending NOW" fetchUrl={requests.fetchTrending} />
 			<Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
 			<Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
